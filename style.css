@@ -1,0 +1,144 @@
+/* Reset + base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Better mobile handling */
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.login-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+
+    /* Responsive width */
+    width: 100%;
+    max-width: 380px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input Group */
+.input-group {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.input-group input {
+    width: 100%; /* FIXED */
+    padding: 12px 40px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Focus effect */
+.input-group input:focus {
+    border-color: #007BFF;
+}
+
+/* Icons */
+.input-group .icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.input-group .toggle {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+/* Forgot password */
+.forgot {
+    text-align: center;
+    margin-top: -8px;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.forgot a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 📱 Small devices (phones) */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .login-box h2 {
+        font-size: 20px;
+    }
+
+    .input-group input {
+        font-size: 13px;
+        padding: 10px 36px;
+    }
+
+    .login-btn {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+/* 📱 Tablets */
+@media (min-width: 768px) {
+    .login-box {
+        max-width: 420px;
+        padding: 30px;
+    }
+}
